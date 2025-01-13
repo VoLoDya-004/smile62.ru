@@ -37,7 +37,7 @@ mysqli_select_db($connect, $dbName) or die ("<p>Не могу создать с�
 $result = mysqli_query($connect, $query) or die(mysqli_error());
 mysqli_close($connect);
 //$count = mysqli_num_rows($result);
-															//карточки///
+															//карточки////
 	echo '<div id= "katalog" class="setka">';
 while ($row=mysqli_fetch_array($result))
 	{

@@ -1,16 +1,14 @@
-<script src="./javascripts/smena_tema.js"></script>
-<div>
-<span>
-<header>
-	<div class="header">
-		<div class="magazin"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- viewBox="0 0 960.000000 540.000000"
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="960.000000pt" height="540.000000pt" viewBox="0 0 960.000000 540.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.16, written by Peter Selinger 2001-2019
 </metadata>
 <g transform="translate(0.000000,540.000000) scale(0.100000,-0.100000)"
-fill: #ff7701; stroke="none">
+fill="#000000" stroke="none">
 <path d="M6675 4509 c-295 -31 -587 -163 -789 -357 -122 -118 -234 -298 -265
 -424 -6 -26 -11 -80 -11 -121 0 -95 26 -140 81 -145 47 -4 55 7 85 120 48 181
 147 343 297 485 246 234 594 348 924 302 290 -40 497 -212 583 -484 31 -97 38
@@ -65,35 +63,3 @@ fill: #ff7701; stroke="none">
 182 -45 9 -200 11 -323 3z"/>
 </g>
 </svg>
-		</div>
-		<div class="nav"><button id="navigation"><img src="./images/icons/nav.png" style= "width:20px"></button></div>
-		<div class="poisk--glavnaya">
-		<div class="poisk">
-			<input id="a1" type="search" placeholder="Искать здесь...">
-			<button id="a2"><img src="../images/icons/poisk.png" alt="поиск" style="width: 20px; pointer-events: none"></button>
-		</div>
-		</div>
-		<ul class="menu">
-	    	<li class="menu_item">
-			<?php
-				$test = "Главная";
-				echo '<a href="/" class="block">'.$test.'</a>'
-			?>
-			</li>
-  	    	<li class="menu_item">
-				<a href="isbranoe.php" class="block">Избранное</a>
-			</li>
-			<li class="menu_item">
-  	    			<a href="profil.php" class="block">Профиль</a>
-			</li>
-  	    	<li class="menu_item">
-  	    			<a href="korzina.php" class="block">Корзина<span class="circle" id="circle_1">0</span></a>
-			</li>
-		</ul>
-		<span class="tooltip"><button id='themeToggle'><img src="./images/icons/tema.png" style= "width:16px" class="themeToggle"></button><span class="tooltip-text">Сменить тему<span class="tr"></span></span></span>
-		<span class="target"></span>
-		
-	 </div>
-	</header>
-</span>
-</div>;

@@ -22,7 +22,7 @@ body {
 	User-select: none;
 	position: fixed;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 	font-family: Hauss, Segoe UI, -apple-system, Roboto, Helvetica Neue, Noto Sans, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
@@ -163,7 +163,7 @@ input:-ms-input-placeholder { color: rgba(0, 0, 0, 0.196) !important; }
     height: 17px;
 	text-align: center;
 	color: #fff;
-	background: #f55123;
+	background: #e50000;
 	font: 10px Arial, sans-serif;
 	display: inline-block;
 	position: absolute;
@@ -256,7 +256,7 @@ body.dark-theme {
 .progress-bar{
 	position: fixed;
 	margin-top: 72px;
-	z-index: 1;
+	z-index: 2;
 	left: 0;
 	top: 0;
 	height: 4px;
@@ -367,10 +367,24 @@ body.dark-theme {
 .card:hover{/*смена тени при наведении курсора*/
 	box-shadow: 4px 8px 16px rgba(117, 14, 107, 0.2);
 }
+
 .card_top{/*вверх карточки*/
 flex: 0 0 220px;
 position: relative;
 overflow: hidden;
+}
+
+.card_heart{/*сердце*/
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	transition: .3s;
+	fill: rgb(118, 118, 118);
+	pointer-events: auto;
+	z-index: 1;
+}
+.card_heart:hover{/*сердце*/
+	fill: rgb(96, 22, 118);
 }
 
 .card_image{/*картинка*/
@@ -398,8 +412,8 @@ overflow: hidden;
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
-	padding: 4px 8px;
-	background-color:  #ff6633;
+	padding: 1px 4px;
+	background-color:  #ff5050;
 	border-radius: 4px;
 	color: white;
 	font-weight: 400;
@@ -432,7 +446,7 @@ overflow: hidden;
 
 .card_price--discount::before{/*со скидкой*/
 	content: "Со скидкой";
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 13px;
 	color: rgb(0, 0, 0);	
 }
@@ -454,6 +468,27 @@ overflow: hidden;
 	padding-right: 20px;	
 }
 
+.card_price--count--1{/*цена без скидки при одинаковой цене*/
+	font-weight: 700;
+	font-size: 17px;
+	color: #000000;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: start;
+	width: 100px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.card_price--count--1::before{/*цена без скидки при одинаковой цене*/
+	display: flex;
+	justify-content: start;
+	content: "Обычная";
+	font-weight: 700;
+	font-size: 13px;
+	color: rgb(0, 0, 0);
+	padding-right: 20px;
+}
+
 .card_title{/*наименование*/
 	display: block;
 	margin-bottom: 10px;
@@ -463,10 +498,12 @@ overflow: hidden;
   	color: #000000;
 	text-decoration: none;
 	padding-left: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
-
 .card_title:hover{/*наименование при наведении*/
-	color: #ff6633;
+	color: rgb(96, 22, 118);
 }
 
 .card_btn{/*кнопка*/
@@ -483,11 +520,12 @@ overflow: hidden;
   	transition: 0.2s;
 	position: absolute;
 	bottom: 0;
+	background-color: rgb(247 214 255);
 }
 
 .card_btn:hover{
-	border: 1px solid #ff6633;
-	background-color: #ff6633;
+	border: 1px solid rgb(96, 22, 118);
+	background-color: rgb(96, 22, 118);
 	color: #fff;
 }
 

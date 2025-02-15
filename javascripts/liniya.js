@@ -1,16 +1,7 @@
+//смена темы
+//код после прогрузки страницы
+
 window.onload = () => {
-/*смена темы*/
-/*
-document.getElementById('themeToggle').addEventListener('click', function() {
-    const currentTheme = document.body.className;
-    if (currentTheme === 'dark-theme') {
-        document.body.className = 'light-theme';
-    } else {
-        document.body.className = 'dark-theme';
-        document.card.style.background = 'black';
-    }   
-});
-*/
     function change_theme_add() {
         const boxes = document.querySelectorAll('.card');
         boxes.forEach(box => {
@@ -62,7 +53,7 @@ document.getElementById('themeToggle').addEventListener('click', function() {
 const points = document.querySelectorAll(".menu li a");
 for(let point of points){
  if(point.href == document.location){
-  point.classList.add('line', 'block','line-text');
+  point.classList.add('line', 'menu__item--style','line-text');
  }
 }
 }

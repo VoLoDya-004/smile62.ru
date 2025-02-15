@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8"> 
-	<meta http-equiv"X-UA-Compatible" content="IE=edge"> <!--уточнить-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--уточнить-->
+	<meta http-equiv"X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Продажа одежды">
 	<meta name="keywords" content="Продажа, одежда">
-	<link rel="stylesheet" href="stylesheets/style.css"> <!--уточнить и возможно что-то добавить-->
+	<link rel="stylesheet" href="stylesheets/style.css">
 	<title> Smile </title>
 </head>
 <script src="./javascripts/circle.js"></script>

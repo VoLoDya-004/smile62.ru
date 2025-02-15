@@ -2,11 +2,11 @@
 require_once "../auth/auth.php";
 ?>
 <!DOCTYPE html>
-<html lang="ru"> <!--уточнить-->
+<html lang="ru">
 <head>
 	<meta charset="UTF-8"> 
-	<meta http-equiv"X-UA-Compatible" content="IE=edge"> <!--уточнить-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--уточнить-->
+	<meta http-equiv"X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Smile это современный интернет-магазин для приобритения современной техники">
 	<meta name="keywords" content="Продажа, техника, Smile">
 	<link rel="stylesheet" href="stylesheets/style.css">
@@ -14,12 +14,12 @@ require_once "../auth/auth.php";
 	<title> Smile </title>
 </head>
 <body> 
-													<!--шапка-->
+																	<!--шапка-->
 	<?php
 		include './php_module/header.php';
 	?>
 	<div class="progress-bar" id="progressBar"></div>
-													<!--основной контент-->
+																	<!--основной контент-->
 <div class="content">
 		<h1 class="podzagolovok">Каталог</h1>
 		<hr class="hr-line">
@@ -39,7 +39,7 @@ mysqli_select_db($connect, $dbName) or die ("<p>Не могу создать с�
 $result = mysqli_query($connect, $query) or die(mysqli_error());
 mysqli_close($connect);
 //$count = mysqli_num_rows($result);
-															//карточки///
+																	//карточки///
 	echo '<div id= "katalog" class="setka">';
 while ($row=mysqli_fetch_array($result))
 	{
@@ -81,7 +81,7 @@ while ($row=mysqli_fetch_array($result))
 ?>
 	</div>
 </div>
-														<!--футер-->
+																	<!--футер-->
 														
 	<?php
 		include './php_module/footer.php';

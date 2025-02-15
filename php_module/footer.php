@@ -1,6 +1,6 @@
 <div>
 <span><footer class="footer">
-			<div class="magazin2"><img src="./images/icons/magazin.png" alt="картинка">
+			<div class="logo__footer"><img src="./images/icons/magazin.png" alt="картинка">
 			</div>
 			<div class="menu2">
 				<ul style="margin: 0;">

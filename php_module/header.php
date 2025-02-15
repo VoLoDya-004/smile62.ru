@@ -3,7 +3,7 @@
 <span>
 <header>
 	<div class="header">
-		<div class="magazin"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+		<div class="logo__header"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  viewBox="0 0 960.000000 540.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -66,28 +66,28 @@ fill: #ff7701; stroke="none">
 </g>
 </svg>
 		</div>
-		<div class="nav"><button id="navigation"><img src="./images/icons/nav.png" style= "width:20px"></button></div>
-		<div class="poisk--glavnaya">
-		<div class="poisk">
-			<input id="a1" type="search" placeholder="Искать здесь...">
-			<button id="a2"><img src="../images/icons/poisk.png" alt="поиск" style="width: 20px; pointer-events: none"></button>
+		<div class="nav"><button id="nav__button"><img src="./images/icons/nav.png" style= "width:20px"></button></div>
+		<div class="search">
+		<div class="search__line">
+			<input id="search__line--left" type="search" placeholder="Искать здесь...">
+			<button id="search__line--right"><img src="../images/icons/poisk.png" alt="поиск" style="width: 20px; pointer-events: none"></button>
 		</div>
 		</div>
 		<ul class="menu">
-	    	<li class="menu_item">
+	    	<li class="menu__item">
 			<?php
 				$test = "Главная";
-				echo '<a href="/" class="block">'.$test.'</a>'
+				echo '<a href="/" class="menu__item--style">'.$test.'</a>'
 			?>
 			</li>
-  	    	<li class="menu_item">
-				<a href="isbranoe.php" class="block">Избранное</a>
+  	    	<li class="menu__item">
+				<a href="isbranoe.php" class="menu__item--style">Избранное</a>
 			</li>
-			<li class="menu_item">
-  	    			<a href="profil.php" class="block">Профиль</a>
+			<li class="menu__item">
+  	    			<a href="profil.php" class="menu__item--style">Профиль</a>
 			</li>
-  	    	<li class="menu_item">
-  	    			<a href="korzina.php" class="block">Корзина<span class="circle" id="circle_1">0</span></a>
+  	    	<li class="menu__item">
+  	    			<a href="korzina.php" class="menu__item--style">Корзина<span class="circle" id="circle_1">0</span></a>
 			</li>
 		</ul>
 		<span class="tooltip"><button id='themeToggle'><img src="./images/icons/tema.png" style= "width:16px" class="themeToggle"></button><span class="tooltip-text">Сменить тему<span class="tr"></span></span></span>

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Продажа одежды">
 	<meta name="keywords" content="Продажа, одежда">
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets_css/styles.css">
 	<title> Smile </title>
 </head>
 <body>
@@ -17,8 +17,8 @@
 	<?php
 		include './php_module/header.php';
 	?>
-	<div class="progress-bar" id="progressBar"></div>
-		<div class="content">dgfhfdj</div>
+	<div id="progressBar"></div>
+		<div id="content">контент</div>
 	<?php
 		include './php_module/footer.php';
 	?>

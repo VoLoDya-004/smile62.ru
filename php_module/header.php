@@ -2,7 +2,6 @@
 <div>
 <span>
 <header>
-	<div class="header">
 		<div class="logo__header"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  viewBox="0 0 960.000000 540.000000"
  preserveAspectRatio="xMidYMid meet">
@@ -69,31 +68,28 @@ fill: #ff7701; stroke="none">
 		<div class="nav"><button id="nav__button"><img src="./images/icons/nav.png" style= "width:20px"></button></div>
 		<div class="search">
 		<div class="search__line">
-			<input id="search__line--left" type="search" placeholder="Искать здесь...">
-			<button id="search__line--right"><img src="../images/icons/poisk.png" alt="поиск" style="width: 20px; pointer-events: none"></button>
+			<input id="search__line_line" type="search" placeholder="Искать здесь...">
+			<button id="search__line_button"><img src="../images/icons/poisk.png" alt="поиск" style="width: 20px; pointer-events: none"></button>
 		</div>
 		</div>
 		<ul class="menu">
 	    	<li class="menu__item">
 			<?php
 				$test = "Главная";
-				echo '<a href="/" class="menu__item--style">'.$test.'</a>'
+				echo '<a href="/" class="menu__item_style">'.$test.'</a>'
 			?>
 			</li>
   	    	<li class="menu__item">
-				<a href="isbranoe.php" class="menu__item--style">Избранное</a>
+				<a href="isbranoe.php" class="menu__item_style">Избранное</a>
 			</li>
 			<li class="menu__item">
-  	    			<a href="profil.php" class="menu__item--style">Профиль</a>
+  	    			<a href="profil.php" class="menu__item_style">Профиль</a>
 			</li>
   	    	<li class="menu__item">
-  	    			<a href="korzina.php" class="menu__item--style">Корзина<span class="circle" id="circle_1">0</span></a>
+  	    			<a href="korzina.php" class="menu__item_style">Корзина<span class="circle" id="circle">0</span></a>
 			</li>
 		</ul>
-		<span class="tooltip"><button id='themeToggle'><img src="./images/icons/tema.png" style= "width:16px" class="themeToggle"></button><span class="tooltip-text">Сменить тему<span class="tr"></span></span></span>
-		<span class="target"></span>
-		
-	 </div>
+		<span class="tooltip"><button id='themeToggle'><img src="./images/icons/tema.png" style= "width:16px" class="themeToggle"></button><span class="tooltip__text">Сменить тему<span class="tooltip__tail"></span></span></span>	
 	</header>
 </span>
 </div>;

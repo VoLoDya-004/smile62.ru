@@ -17,7 +17,7 @@ body {
 
 																	/*СТИЛЬ ШАПКИ*/
 
-.header { /*стиль шапки и её элементов */
+header { /*стиль шапки и её элементов */
 	color: white;
 	display: flex;
    	justify-content: space-between;
@@ -77,7 +77,7 @@ body {
 	border-radius: 10px 10px 10px 10px;
 }
 
-#search__line--left { /*непосредственно строка поиска*/
+#search__line_line { /*непосредственно строка поиска*/
 	border-radius: 10px 10px 10px 10px;
 	width: 93%;
 	height: 36px;
@@ -88,12 +88,12 @@ body {
 	border: 3px solid #d8c4e0;
 }
 
-#search__line--left.dark-theme {
+#search__line_line.dark-theme {
     background-color: #0000005c;
     color: #ffffff;
 }
 
-#search__line--right { /*кнопка поиска*/
+#search__line_button { /*кнопка поиска*/
 	border-radius: 10px 10px 10px 10px;
 	width: 7%;
 	height: 30px;
@@ -109,7 +109,7 @@ body {
 	transition: background-color .3s;
 }
 
-#search__line--right:hover {
+#search__line_button:hover {
 	background-color: #b193bd;
 }
 
@@ -138,7 +138,7 @@ input:-ms-input-placeholder { color: rgba(0, 0, 0, 0.196) !important; }
 	display: inline-block;
 }
 
-.menu__item--style { /*стиль разделов шапки */
+.menu__item_style { /*стиль разделов шапки */
 	color: Silver;
 	text-decoration: none;
 	padding: 22px 5px 0;
@@ -148,7 +148,7 @@ input:-ms-input-placeholder { color: rgba(0, 0, 0, 0.196) !important; }
 	transition: color .3s;
 }
 
-.menu__item--style:hover { /*при наведении на раздел шапки */
+.menu__item_style:hover { /*при наведении на раздел шапки */
 	color: white;
 }
 
@@ -222,7 +222,7 @@ body.dark-theme { /*темная тема*/
   	height: auto;
 }
 
-.tr { /*хвост для тултипа*/
+.tooltip__tail { /*хвост для тултипа*/
 	position: absolute;
 	top: 3.5px;
 	right: -2px;
@@ -234,7 +234,7 @@ body.dark-theme { /*темная тема*/
 	transform: rotate(45deg);
 }
 
-.tooltip-text { /*текст тултипа*/
+.tooltip__text { /*текст тултипа*/
 	white-space: nowrap;
 	font-family: "PT Sans", sans-serif;
   	background-color: #9814ad;
@@ -247,13 +247,13 @@ body.dark-theme { /*темная тема*/
 }
 
 /*добавляем появление текстового блока при наведении на кнопку*/
-#themeToggle:hover + .tooltip-text, .tr {
+#themeToggle:hover + .tooltip__text, .tooltip__tail {
 	display: block;
 }
 
 																	/*ОСНОВНОЙ КОНТЕНТ*/
 
-.progress-bar { /*полоса прогресса*/
+#progressBar { /*полоса прогресса*/
 	position: fixed;
 	margin-top: 72px;
 	z-index: 2;
@@ -296,14 +296,14 @@ body.dark-theme { /*темная тема*/
 	background-size: contain;
 }
 
-.content {
+#content {
 	min-height: 100vh; 
 	grid-template-columns: auto;
 	margin: 90px 50px 0px;
 	font-family: Hauss, Segoe UI, -apple-system, Roboto, Helvetica Neue, Noto Sans, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-.podzagolovok { /*подзаголовок*/
+.subtitle { /*подзаголовок*/
     font-weight: 700;
     font-size: 33px;
 	cursor: default;
@@ -319,7 +319,7 @@ body.dark-theme { /*темная тема*/
 	display: block;
 }
 
-.tovar { /*надпись "товары"*/
+.product { /*надпись "товары"*/
 	position: absolute;
 	font-size: 27px;
     font-weight: 700;
@@ -365,13 +365,13 @@ body.dark-theme { /*темная тема*/
 	box-shadow: 4px 8px 16px rgba(117, 14, 107, 0.2);
 }
 
-.card_top { /*вверх карточки*/
+.card__top { /*вверх карточки*/
 flex: 0 0 220px;
 position: relative;
 overflow: hidden;
 }
 
-.card_heart { /*сердце*/
+.card__heart { /*сердце*/
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -381,11 +381,11 @@ overflow: hidden;
 	z-index: 1;
 }
 
-.card_heart:hover { /*сердце*/
+.card__heart:hover { /*сердце*/
 	fill: rgb(96, 22, 118);
 }
 
-.card_image { /*картинка*/
+.card__image { /*картинка*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -394,7 +394,7 @@ overflow: hidden;
 	display: block;
 }
 
-.card_image > img { /*непосредственно к картинке*/
+.card__image > img { /*непосредственно к картинке*/
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
@@ -402,11 +402,11 @@ overflow: hidden;
 	pointer-events: none;
 }
 
-.card_image:hover > img { /*при наведении курсора на картинку*/
+.card__image:hover > img { /*при наведении курсора на картинку*/
 	transform: scale(1.1);
 }
 
-.card_label { /*скидка*/
+.card__label { /*скидка*/
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
@@ -418,22 +418,22 @@ overflow: hidden;
 	font-size: 16px;
 }
 
-.card_bottom { /*разрешаем расширение, т.к. значения могут меняться а картинка постоянная(низ карточки)*/
+.card__bottom { /*разрешаем расширение, т.к. значения могут меняться а картинка постоянная(низ карточки)*/
 	flex: 1 0 auto;
 }
 
-.card_prices { /*обе цены*/
+.card__prices { /*обе цены*/
 	display: flex;
 	margin-bottom: 10px;
 }
 
-.card_price::after { /*для добавления рубля*/
+.card__price::after { /*для добавления рубля*/
 	content: "\20BD";
 	padding-left: 4px;
 	padding-right: 10px;
 }
 
-.card_price--discount { /*цена со скидкой*/
+.card__price_discount { /*цена со скидкой*/
 	font-weight: 700;
 	font-size: 17px;
 	color: #000000;
@@ -442,14 +442,14 @@ overflow: hidden;
 	padding-left: 10px;
 }
 
-.card_price--discount::before { /*со скидкой*/
+.card__price_discount::before { /*со скидкой*/
 	content: "Со скидкой";
 	font-weight: 700;
 	font-size: 13px;
 	color: rgb(0, 0, 0);	
 }
 
-.card_price--count { /*цена без скидки*/
+.card__price_count { /*цена без скидки*/
 	font-weight: 400;
 	font-size: 17px;
 	color: #000000;
@@ -458,7 +458,7 @@ overflow: hidden;
 	justify-content: end;
 }
 
-.card_price--count::before { /*без скидки*/
+.card__price_count::before { /*без скидки*/
 	content: "Обычная";
 	font-weight: 400;
 	font-size: 13px;
@@ -466,7 +466,7 @@ overflow: hidden;
 	padding-right: 20px;	
 }
 
-.card_price--count--1 { /*цена без скидки при одинаковой цене*/
+.card__price_count1 { /*цена без скидки при одинаковой цене*/
 	font-weight: 700;
 	font-size: 17px;
 	color: #000000;
@@ -477,7 +477,7 @@ overflow: hidden;
 	margin-bottom: 10px;
 	padding-left: 10px;
 }
-.card_price--count--1::before { /*цена без скидки при одинаковой цене*/
+.card__price_count1::before { /*цена без скидки при одинаковой цене*/
 	display: flex;
 	justify-content: start;
 	content: "Обычная";
@@ -487,7 +487,7 @@ overflow: hidden;
 	padding-right: 20px;
 }
 
-.card_title { /*наименование*/
+.card__title { /*наименование*/
 	display: block;
 	margin-bottom: 10px;
   	font-weight: 400;
@@ -500,11 +500,11 @@ overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-.card_title:hover { /*наименование при наведении*/
+.card__title:hover { /*наименование при наведении*/
 	color: rgb(96, 22, 118);
 }
 
-.card_btn { /*кнопка*/
+.card__btn { /*кнопка*/
 	display: block;
 	width: 100%;
 	font-weight: 400;
@@ -521,7 +521,7 @@ overflow: hidden;
 	background-color: rgb(247 214 255);
 }
 
-.card_btn:hover {
+.card__btn:hover {
 	border: 1px solid rgb(96, 22, 118);
 	background-color: rgb(96, 22, 118);
 	color: #fff;
@@ -548,7 +548,7 @@ overflow: hidden;
 
 																	/*СТИЛЬ ФУТЕРА*/
 
-.footer {
+footer {
 	display: flex;
 	margin-top: auto; 
 	background-color: rgba(211, 212, 221, .24);
@@ -565,102 +565,7 @@ overflow: hidden;
 	user-select: none;
 }
 
-.ss { /*блок ссылок в футере*/
-	display: flex;
-	gap: 8px;
-	width: 600px;
-	justify-content: center;
-	align-items: end;
-	margin-bottom: 20px;
-}
-
-.sss { /*ссылки в футере*/
-	background-color: #fff;
-	border-radius: 9px;
-}
-
-.sss.dark-theme {
-	background-color: #000000;
-}
-
-.ss--vk {
-	display: flex;
-	height: 34px;
-	width: 34px;
-	justify-content: center;
-	align-items: center;
-	transition: background-color .3s;
-}
-
-.ss--tg {
-	display: flex;
-	height: 34px;
-	width: 34px;
-	justify-content: center;
-	align-items: center;
-	transition: background-color .3s;
-}
-
-.ss--ok {
-	display: flex;
-	height: 34px;
-	width: 34px;
-	justify-content: center;
-	align-items: center;
-	transition: background-color .3s;
-}
-
-.ss--youtube {
-	display: flex;
-	height: 34px;
-	width: 34px;
-	justify-content: center;
-	align-items: center;
-	transition: background-color .3s;
-}
-
-/*цвет значков при наведении*/
-.ss--ok--svg {
-	fill: #868695;
-	transition: .3s;
-	padding: 8px 11px 8px 11px;
-}
-
-.ss--ok--svg:hover {
-	fill: #ff7701;
-}
-
-.ss--vk--svg {
-	fill: #868695;
-	transition: .3s;
-	padding: 11px 7px 11px 7px;
-}
-
-.ss--vk--svg:hover {
-	fill: #07f;
-}
-
-.ss--tg--svg {
-	fill: #868695;
-	transition: .3s;
-	padding: 9px 7px 9px 7px;
-}
-
-.ss--tg--svg:hover {
-	fill: #3490ec;
-}
-
-.ss--youtube--svg {
-	fill: #868695;
-	transition: .3s;
-	padding: 10px 7px 10px 7px;
-}
-
-.ss--youtube--svg:hover {
-	fill: red;
-}
-
-.menu2 { /*блоки меню футера (Разделы) */
+.section { /*блоки меню футера (Разделы) */
 	display: inline-flex;
 	width: 100%;
 	justify-content: end;
@@ -668,7 +573,7 @@ overflow: hidden;
 	padding-top: 30px;
 }
 
-.menu3 { /*блоки меню футера (Контакты) */
+.contact { /*блоки меню футера (Контакты) */
 	display: inline-flex;
 	width: 700px;
 	justify-content: end;
@@ -677,7 +582,15 @@ overflow: hidden;
 	padding-top: 30px;
 }
 
-.menu_item2 { /*блоки пунктов меню футера (Разделы) */
+.footer__title { /*подзаголовок в футере */
+	margin: 0 0 20px;
+	font-weight: 800;
+	display: flex;
+	color: rgb(0, 0, 0);
+	cursor: default;
+}
+
+.section__item { /*блоки пунктов меню футера (Разделы) */
 	margin: 5px 0;
 	display: flex;
 	color: #868695;
@@ -687,34 +600,119 @@ overflow: hidden;
 	user-select: none;
 }
 
-.menu_item3 { /*блоки пунктов меню футера (Контакты) */
+.contact__item { /*блоки пунктов меню футера (Контакты) */
 	margin: 5px 0;
 	display: flex;
 	color: #868695;
-	transition: color .3s;
 }
 
-.menu_item4 { /*подзаголовок в футере */
-	margin: 0 0 20px;
-	font-weight: 800;
-	display: flex;
-	color: rgb(0, 0, 0);
-	cursor: default;
-}
-
-.block2 { /*стиль разделов футера */
+.section__item_style { /*стиль разделов футера */
 	color: #868695;
 	text-decoration: none;
-	justify-content: center;
-	width: 80px;
 	transition: color .3s;
+	width: 80px;
 }
 
-.block2:hover { /*при наведении на раздел шапки */
+.section__item_style:hover { /*при наведении на раздел шапки */
 	color: rgb(96, 22, 118);
 }
 
-.niz { /*низ футера*/
+.link { /*блок ссылок в футере*/
+	display: flex;
+	gap: 8px;
+	width: 600px;
+	justify-content: center;
+	align-items: end;
+	margin-bottom: 20px;
+}
+
+.link__item { /*ссылки в футере*/
+	background-color: #fff;
+	border-radius: 9px;
+}
+
+.link__item.dark-theme {
+	background-color: #000000;
+}
+
+.link__item-vk {
+	display: flex;
+	height: 34px;
+	width: 34px;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+}
+
+.link__item-tg {
+	display: flex;
+	height: 34px;
+	width: 34px;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+}
+
+.link__item-ok {
+	display: flex;
+	height: 34px;
+	width: 34px;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+}
+
+.link__item-youtube {
+	display: flex;
+	height: 34px;
+	width: 34px;
+	justify-content: center;
+	align-items: center;
+	transition: background-color .3s;
+}
+
+/*цвет значков при наведении*/
+.link__item-ok-svg {
+	fill: #868695;
+	transition: .3s;
+	padding: 8px 11px 8px 11px;
+}
+
+.link__item-ok-svg:hover {
+	fill: #ff7701;
+}
+
+.link__item-vk-svg {
+	fill: #868695;
+	transition: .3s;
+	padding: 11px 7px 11px 7px;
+}
+
+.link__item-vk-svg:hover {
+	fill: #07f;
+}
+
+.link__item-tg-svg {
+	fill: #868695;
+	transition: .3s;
+	padding: 9px 7px 9px 7px;
+}
+
+.link__item-tg-svg:hover {
+	fill: #3490ec;
+}
+
+.link__item-youtube-svg {
+	fill: #868695;
+	transition: .3s;
+	padding: 10px 7px 10px 7px;
+}
+
+.link__item-youtube-svg:hover {
+	fill: red;
+}
+
+.second_row { /*низ футера*/
 	display: flex;
 	align-items: end;
 	margin: 0 10px 5px 0;

@@ -7,8 +7,8 @@ window.onload = () => {
         boxes.forEach(box => {
             box.classList.add("dark-theme");
         });
-        a1.classList.add("dark-theme");
-        const element = document.querySelectorAll('.sss');
+        search__line_line.classList.add("dark-theme");
+        const element = document.querySelectorAll('.link__item');
         element.forEach(elem => {
             elem.classList.add("dark-theme");
         });
@@ -18,8 +18,8 @@ window.onload = () => {
         boxes.forEach(box => {
             box.classList.remove("dark-theme");
         });
-        a1.classList.remove("dark-theme");
-        const element = document.querySelectorAll('.sss');
+        search__line_line.classList.remove("dark-theme");
+        const element = document.querySelectorAll('.link__item');
         element.forEach(elem => {
             elem.classList.remove("dark-theme");
         });
@@ -53,7 +53,7 @@ window.onload = () => {
 const points = document.querySelectorAll(".menu li a");
 for(let point of points){
  if(point.href == document.location){
-  point.classList.add('line', 'menu__item--style','line-text');
+  point.classList.add('line', 'line-text');
  }
 }
 }

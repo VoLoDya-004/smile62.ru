@@ -1,0 +1,141 @@
+																	/*СТИЛЬ ФУТЕРА*/
+
+footer {
+	display: flex;
+	margin-top: auto; 
+	background-color: rgba(211, 212, 221, .24);
+	width: 100%;
+	height: 240px;
+	font-family: Hauss, Segoe UI, -apple-system, Roboto, Helvetica Neue, Noto Sans, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.logo__footer { /*стиль надписи "МАГАЗИН" в футере сайта */
+	width: auto;
+	display: inline-flex;
+	height: 60%;
+	pointer-events: none;
+	user-select: none;
+}
+
+.section { /*блоки меню футера (Разделы) */
+	@include i-flex-end-gr;
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	&__item { /*блоки пунктов меню футера (Разделы) */
+		margin: 5px 0;
+		@include flex-center-gr;
+		color: #868695;
+		text-decoration: none;
+		transition: color .3s;
+		user-select: none;
+		&_style { /*стиль разделов футера */
+			color: #868695;
+			text-decoration: none;
+			transition: color .3s;
+			width: 80px;
+			&:hover { /*при наведении на раздел шапки */
+				color: rgb(96, 22, 118);
+			}
+		}
+	}
+}
+
+.contact { /*блоки меню футера (Контакты) */
+	@include i-flex-end-gr;
+	width: 700px;
+	margin-left: 50px;
+	height: auto;
+	padding-top: 30px;
+	&__item { /*блоки пунктов меню футера (Контакты) */
+		margin: 5px 0;
+		display: flex;
+		color: #868695;
+	}
+}
+
+.footer__title { /*подзаголовок в футере */
+	margin: 0 0 20px;
+	font-weight: 800;
+	display: flex;
+	color: rgb(0, 0, 0);
+	cursor: default;
+}
+
+.link { /*блок ссылок в футере*/
+	@include flex-center-gr;
+	gap: 8px;
+	width: 600px;
+	align-items: end;
+	margin-bottom: 20px;
+	&__item { /*ссылки в футере*/
+		background-color: #fff;
+		border-radius: 9px;
+		&.dark-theme {
+			background-color: #000000;
+		}
+		&-vk {
+			@include flex-center;
+			height: 34px;
+			width: 34px;
+			transition: background-color .3s;
+			&-svg {
+				fill: #868695;
+				transition: .3s;
+				padding: 11px 7px 11px 7px;
+				&:hover {
+					fill: #07f;
+				}
+			}
+		}
+		&-tg {
+			@include flex-center;
+			height: 34px;
+			width: 34px;
+			transition: background-color .3s;
+			&-svg {
+				fill: #868695;
+				transition: .3s;
+				padding: 9px 7px 9px 7px;
+				&:hover {
+					fill: #3490ec;
+				}
+			}
+		}
+		&-ok {
+			@include flex-center;
+			height: 34px;
+			width: 34px;
+			transition: background-color .3s;
+			&-svg {
+				fill: #868695;
+				transition: .3s;
+				padding: 8px 11px 8px 11px;
+				&:hover {
+					fill: #ff7701;
+				}
+			}
+		}
+		&-youtube {
+			@include flex-center;
+			height: 34px;
+			width: 34px;
+			transition: background-color .3s;
+			&-svg {
+				fill: #868695;
+				transition: .3s;
+				padding: 10px 7px 10px 7px;
+				&:hover {
+					fill: red;
+				}
+			}
+		}
+	}
+}
+
+.second-row { /*низ футера*/
+	@include flex-end;
+	margin: 0 10px 5px 0;
+	color: #868695;
+	width: 500px;
+}

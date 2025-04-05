@@ -1,4 +1,3 @@
-<script src="./javascripts/smena_tema.js"></script>
 <div>
 <span>
 <header>
@@ -80,16 +79,23 @@ fill: #ff7701; stroke="none">
 			?>
 			</li>
   	    	<li class="menu__item">
-				<a href="isbranoe.php" class="menu__item_style">Избранное</a>
+				<a href="favourites.php" class="menu__item_style">Избранное</a>
 			</li>
 			<li class="menu__item">
-  	    			<a href="profil.php" class="menu__item_style">Профиль</a>
+  	    			<a href="profile.php" class="menu__item_style">Профиль</a>
 			</li>
   	    	<li class="menu__item">
-  	    			<a href="korzina.php" class="menu__item_style">Корзина<span class="circle" id="circle">0</span></a>
+  	    			<a href="basket.php" class="menu__item_style">Корзина<span class="circle" id="circle">0</span></a>
 			</li>
 		</ul>
-		<span class="tooltip"><button id='themeToggle'><img src="./images/icons/tema.png" style= "width:16px" class="themeToggle"></button><span class="tooltip__text">Сменить тему<span class="tooltip__tail"></span></span></span>	
+
+		<!-- БИБЛИОТЕКА НА ТУЛТИП -->
+		<button id='themeToggle'>
+				<img src="./images/icons/tema.png" style= "width:16px" class="themeToggle">
+		</button>
+			<script src="https://unpkg.com/@popperjs/core@2"></script>
+			<script src="https://unpkg.com/tippy.js@6"></script>
+			<script src="./javascripts/tooltip.js"></script>
 	</header>
 </span>
 </div>;

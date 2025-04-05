@@ -9,17 +9,16 @@
 					<a href="/" class="section__item_style">Главная</a>
 				</li>
 				<li class="section__item">
-					<a href="isbranoe.php" class="section__item_style">Избранное</a>
+					<a href="favourites.php" class="section__item_style">Избранное</a>
 				</li>
 				<li class="section__item">
-					<a href="profil.php" class="section__item_style">Профиль</a>
+					<a href="profile.php" class="section__item_style">Профиль</a>
 				</li>
 				<li class="section__item">
-					<a href="korzina.php" class="section__item_style">Корзина</a>
+					<a href="basket.php" class="section__item_style">Корзина</a>
 				</li>
 			</ul>
 				</div>
-
 				<div class="contact">
 				<ul style="margin: 0;">
 					<div class="footer__title">Контакты</div>

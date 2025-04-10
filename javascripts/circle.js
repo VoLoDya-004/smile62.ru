@@ -4,3 +4,4 @@ function myFunction(){
     const number = parseInt(numberElement.innerText, 10) + 1;
     numberElement.innerText = number;
     }
+
